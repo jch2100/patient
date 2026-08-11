@@ -1536,27 +1536,15 @@ code {
 <h2 id="day-7-s2">법령 MCP 설치 — API 키 없이 연결하기</h2>
 <p>법령 MCP는 AI가 법령·판례·조례를 조회하도록 연결하는 도구입니다. 이번 학습자 경로는 공개 원격 서버의 <strong>기본 주소만 등록</strong>하며, API 키·비밀번호를 입력하지 않습니다.</p>
 <ol>
-<li>
-<p>ChatGPT에서 설정의 <strong>앱/커넥터</strong> 또는 <strong>고급 설정</strong> 메뉴를 엽니다. 계정·요금제·조직 정책에 따라 메뉴 이름과 위치가 다를 수 있습니다.</p>
-</li>
-<li>
-<p>허용되어 있다면 <strong>Developer mode</strong> 또는 <strong>사용자 지정 MCP 커넥터</strong> 생성을 켭니다. 메뉴가 보이지 않으면 강사 시연으로 전환하고 조직 정책 담당자에게 허용 여부를 확인합니다.</p>
-</li>
-<li>
-<p><code>Add connector</code> 또는 <code>Create connector</code>를 선택합니다.</p>
-</li>
-<li>
-<p>이름에 <code>법령 MCP</code>를 입력합니다.</p>
-</li>
-<li>
-<p>서버 주소에 아래 주소를 그대로 붙여 넣습니다.</p>
-<p><code>https://mcp.gomdori.app/law</code></p>
-<p>주소 뒤에 별도 키 파라미터를 덧붙이지 않고, API 키 입력란도 비워 둡니다.</p>
-</li>
-<li>
-<p>저장한 뒤 새 대화의 도구/앱 목록에서 <strong>법령 MCP</strong>를 선택합니다.</p>
-</li>
+<li>ChatGPT에서 설정의 <strong>앱/커넥터</strong> 또는 <strong>고급 설정</strong> 메뉴를 엽니다. 계정·요금제·조직 정책에 따라 메뉴 이름과 위치가 다를 수 있습니다.</li>
+<li>허용되어 있다면 <strong>Developer mode</strong> 또는 <strong>사용자 지정 MCP 커넥터</strong> 생성을 켭니다. 메뉴가 보이지 않으면 강사 시연으로 전환하고 조직 정책 담당자에게 허용 여부를 확인합니다.</li>
+<li><code>Add connector</code> 또는 <code>Create connector</code>를 선택합니다.</li>
+<li>이름에 <code>법령 MCP</code>를 입력합니다.</li>
+<li>아래 복사 블록의 주소를 서버 URL 칸에 그대로 붙여 넣습니다. 주소 뒤에 별도 키 파라미터를 덧붙이지 않습니다.</li>
+<li>인증 방식(Authentication)에서 <code>없음(None)</code>을 선택합니다. API 키·비밀번호 입력란은 사용하지 않습니다.</li>
+<li>저장한 뒤 새 대화의 도구/앱 목록에서 <strong>법령 MCP</strong>를 선택합니다.</li>
 </ol>
+<div class="prompt"><div class="prompt-head"><span class="prompt-label">서버 주소 복사</span><button class="copy-btn" type="button">복사</button></div><pre class="prompt-body">https://mcp.gomdori.app/law</pre></div>
 <div class="prompt"><div class="prompt-head"><span class="prompt-label">법령 MCP 연결 확인</span><button class="copy-btn" type="button">복사</button></div><pre class="prompt-body">법령 MCP로 &quot;행정절차법&quot;을 검색해줘.
 법령명, 관련 조문, 시행일, 원문 링크를 표로 정리하고,
 조회 결과와 네 해석을 구분해줘.
